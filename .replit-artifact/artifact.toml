@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/"
+title = "Control System List"
+version = "1.0.0"
+id = "artifacts/control-system-list"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/" ]
+localPort = 24871
+
+[services.development]
+run = "pnpm --filter @workspace/control-system-list run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/control-system-list", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/control-system-list", "run", "serve" ]
+
+[services.env]
+PORT = "24871"
+BASE_PATH = "/"
