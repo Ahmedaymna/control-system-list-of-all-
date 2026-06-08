@@ -382,7 +382,7 @@ export function SystemProvider({ children }: { children: React.ReactNode }) {
           batteryLevel: Math.round(level * 100),
           batteryCharging: state === Battery.BatteryState.CHARGING || state === Battery.BatteryState.FULL,
           batteryState: state,
-          screenBrightness: (await Brightness.getBrightnessAsync().catch(() => 0.5)),
+          screenBrightness: 0.5,
           deviceName: Device.deviceName ?? prev.deviceName,
           osVersion: Device.osVersion ?? prev.osVersion,
           androidApiLevel: Device.platformApiLevel ?? prev.androidApiLevel,
