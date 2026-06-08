@@ -7,7 +7,6 @@
     "icon": "./assets/images/icon.png",
     "scheme": "control-system-list",
     "userInterfaceStyle": "dark",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/icon.png",
       "resizeMode": "contain",
@@ -28,24 +27,11 @@
       "favicon": "./assets/images/icon.png"
     },
     "plugins": [
-      [
-        "expo-router",
-        {
-          "origin": "https://replit.com/"
-        }
-      ],
-      "expo-font",
-      "expo-web-browser",
-      "expo-av",
-      "expo-battery",
-      "expo-device",
-      "expo-network",
-      "expo-brightness",
-      "expo-screen-orientation"
+      "expo-router",
+      "expo-font"
     ],
     "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "typedRoutes": true
     }
   }
 }
