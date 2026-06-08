@@ -2,6 +2,11 @@
   "expo": {
     "name": "Control System List",
     "slug": "control-system-list",
+    "extra": {
+      "eas": {
+        "projectId": "13a36d93-858d-441c-855a-fe5d6159795d"
+      }
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
