@@ -5,11 +5,6 @@
  */
 import React, { createContext, useContext, useEffect, useRef, useState, useCallback } from "react";
 import { Alert, Platform, Vibration } from "react-native";
-import * as Battery from "expo-battery";
-import * as Network from "expo-network";
-import * as Device from "expo-device";
-import * as Brightness from "expo-brightness";
-import * as ScreenOrientation from "expo-screen-orientation";
 import Constants from "expo-constants";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
